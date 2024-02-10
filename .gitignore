@@ -14,14 +14,14 @@
 build
 Arepo*
 Arepo.dSYM
-libarepo.a
 .build*/
 *.o
 *.check
 *.pyc
 
 # param, Config, Makefile.systype
-param.txt
+/param.txt
+/Config.sh
 Makefile.systype
 run.sh
 

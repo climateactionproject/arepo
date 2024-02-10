@@ -1,10 +1,10 @@
-%% examples/mhd_shocktube_1d.txt
-% parameter file for 1d mhd shocktube problem
+%% examples/alfven_wave_1d.txt
+% parameter file for 1d Alfven wave problem
 
-InitCondFile                           ./IC
-ICFormat                               3
+InitCondFile                          ics
+ICFormat                              3
 
-OutputDir                             ./output/
+OutputDir                             output/
 SnapshotFileBase                      snap
 SnapFormat                            3
 NumFilesPerSnapshot                   1
@@ -24,11 +24,11 @@ OmegaBaryon                           0.0
 OmegaLambda                           0.0
 HubbleParam                           1.0
 
-BoxSize                               2.5
+BoxSize                               1.0
 PeriodicBoundariesOn                  1
 ComovingIntegrationOn                 0
 
-MaxMemSize                            2500
+MaxMemSize                            1500
 
 TimeOfFirstSnapshot                   0.0
 CpuTimeBetRestartFile                 9000
@@ -36,8 +36,8 @@ TimeLimitCPU                          90000
 
 TimeBetStatistics                     0.005
 TimeBegin                             0.0
-TimeMax                               0.4
-TimeBetSnapshot                       0.4
+TimeMax                               2.0
+TimeBetSnapshot                       0.25
 
 UnitVelocity_in_cm_per_s              1.0
 UnitLength_in_cm                      1.0

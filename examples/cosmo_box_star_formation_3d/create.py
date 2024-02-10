@@ -12,6 +12,7 @@ import h5py    # hdf5 format
 import os    # operating system interface
 from subprocess import call   # execute bash commands
 
+
 ## create new ics with 'music' or 'ngenic' or just 'copy' existing 
 ## ones to the run directory
 ic_creation='copy'
@@ -25,9 +26,9 @@ print("create.py " + simulation_directory)
 if ic_creation == 'copy':
     call(['cp', simulation_directory+'/L8n32/ics', simulation_directory+'/ics'])
 elif ic_creation == 'music':
-    status = call(['hg', 'clone', 'https://bitbucket.org/ohahn/music', simulation_directory+'/music'])
+    status = call(['git', 'clone', 'https://bitbucket.org/ohahn/music', simulation_directory+'/music'])
     if status != 0:
-        print('CREATE: ERROR: hg clone failed!')
+        print('CREATE: ERROR: git clone failed!')
         sys.exit(status)
     cwd = os.getcwd()
     os.chdir(simulation_directory+'/music/')
