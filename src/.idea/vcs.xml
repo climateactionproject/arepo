@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/music" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/run/examples/cosmo_zoom_gravity_only_3d/music" vcs="Git" />
+  </component>
+</project>
